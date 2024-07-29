@@ -1,0 +1,595 @@
+{
+	"id": "4a8942c3-8c88-4389-90a3-87adf8d1e999",
+	"name": "JayAssignment3",
+	"timestamp": "2024-07-29T03:25:05.137Z",
+	"collection_id": "31541777-0695d9aa-ab84-422a-82d8-7a8049875d54",
+	"folder_id": 0,
+	"environment_id": "0",
+	"totalPass": 20,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-07-29T03:25:03.846Z",
+	"totalFail": 13,
+	"results": [
+		{
+			"id": "bb56e0c0-963e-4e25-9fc9-5e63b01ae923",
+			"name": "User",
+			"url": "http://localhost:5157/api/user",
+			"time": 31,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response has the required fields": true,
+				"Email is in a valid format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				31
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response has the required fields": true,
+					"Email is in a valid format": true
+				}
+			]
+		},
+		{
+			"id": "15b2700a-fe11-4dda-a2e0-516510ca6078",
+			"name": "Get Users",
+			"url": "http://localhost:5157/api/user",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response status code is 404": false,
+				"Response has the required fields": true,
+				"Email is in a valid format": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code is 404": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Email is in a valid format": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response status code is 404": false,
+					"Response has the required fields": true,
+					"Email is in a valid format": true
+				}
+			]
+		},
+		{
+			"id": "0a3d7ae9-b5ea-4041-bcd4-f3c27e80a902",
+			"name": "Get Single",
+			"url": "http://localhost:5157/api/user/2",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		},
+		{
+			"id": "bc8cd3f8-e549-4154-95e9-223f657668dc",
+			"name": "Delete",
+			"url": "http://localhost:5157/api/user/3",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 200": false,
+				"Content-Type is application/json": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": false,
+					"Content-Type is application/json": false
+				}
+			]
+		},
+		{
+			"id": "6132f4bf-8356-47e4-9043-4abe8e25844b",
+			"name": "Product",
+			"url": "http://localhost:5157/api/product",
+			"time": 4,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Response status code is 400": false,
+				"Response has the required fields": true,
+				"Price and quantity should be non-empty strings": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response status code is 400": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Response has the required fields": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Price and quantity should be non-empty strings": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Response status code is 400": false,
+					"Response has the required fields": true,
+					"Price and quantity should be non-empty strings": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "934fe024-fcd7-4cfd-9d8e-da95610f1abe",
+			"name": "Get Products",
+			"url": "http://localhost:5157/api/product",
+			"time": 4,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "b7b5cfd9-e915-4dfd-a24b-158f5d97c14c",
+			"name": "Delete",
+			"url": "http://localhost:5157/api/product/2",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 200": false,
+				"Content-Type is application/json": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": false,
+					"Content-Type is application/json": false
+				}
+			]
+		},
+		{
+			"id": "559c3838-0063-482b-b70a-c84d6dea9d4b",
+			"name": "Cart",
+			"url": "http://localhost:5157/api/cart",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "d87dc8ee-cba7-4fd0-ac88-ce8a7b20fffb",
+			"name": "Get Cart",
+			"url": "http://localhost:5157/api/cart",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Response time is less than 200ms": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Response time is less than 200ms": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Response time is less than 200ms": true
+				}
+			]
+		},
+		{
+			"id": "3f7138b2-2f7e-471d-aa78-614125427c9b",
+			"name": "Delete",
+			"url": "http://localhost:5157/api/cart/2",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 200": false,
+				"Content-Type is application/json": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Response status code is 200": false,
+					"Content-Type is application/json": false
+				}
+			]
+		},
+		{
+			"id": "f54302b3-b330-452e-8999-ad07f0cbcf75",
+			"name": "Order",
+			"url": "http://localhost:5157/api/order",
+			"time": 3,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "07e45eb6-9c5d-4fe7-8df0-8606005a0e87",
+			"name": "Get Order",
+			"url": "http://localhost:5157/api/order",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true,
+				"Order date is in a valid date format": false,
+				"Quantity is a non-negative integer": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Order date is in a valid date format": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Quantity is a non-negative integer": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true,
+					"Order date is in a valid date format": false,
+					"Quantity is a non-negative integer": false
+				}
+			]
+		},
+		{
+			"id": "02428628-88b5-4cc8-8ab0-892ce0729943",
+			"name": "Delete",
+			"url": "http://localhost:5157/api/order/2",
+			"time": 3,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Response status code is 200": false,
+				"Content-Type is application/json": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 0,
+					"fail": 1
+				},
+				"Content-Type is application/json": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": false,
+					"Content-Type is application/json": false
+				}
+			]
+		},
+		{
+			"id": "9708f97d-b810-45b9-a69b-ecd56603032d",
+			"name": "Comment",
+			"url": "http://localhost:5157/api/comment",
+			"time": 5,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Response status code is 201": true,
+				"Rating is within a valid range (1-5)": false
+			},
+			"testPassFailCounts": {
+				"Response status code is 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Rating is within a valid range (1-5)": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Response status code is 201": true,
+					"Rating is within a valid range (1-5)": false
+				}
+			]
+		},
+		{
+			"id": "bcca406a-b2b4-4c46-8e6c-198ee9308a05",
+			"name": "Get Comment",
+			"url": "http://localhost:5157/api/comment",
+			"time": 3,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Response status code is 200": true
+			},
+			"testPassFailCounts": {
+				"Response status code is 200": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Response status code is 200": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 81,
+	"collection": {
+		"requests": [
+			{
+				"id": "bb56e0c0-963e-4e25-9fc9-5e63b01ae923",
+				"method": "POST"
+			},
+			{
+				"id": "15b2700a-fe11-4dda-a2e0-516510ca6078",
+				"method": "GET"
+			},
+			{
+				"id": "0a3d7ae9-b5ea-4041-bcd4-f3c27e80a902",
+				"method": "GET"
+			},
+			{
+				"id": "bc8cd3f8-e549-4154-95e9-223f657668dc",
+				"method": "DELETE"
+			},
+			{
+				"id": "6132f4bf-8356-47e4-9043-4abe8e25844b",
+				"method": "POST"
+			},
+			{
+				"id": "934fe024-fcd7-4cfd-9d8e-da95610f1abe",
+				"method": "GET"
+			},
+			{
+				"id": "b7b5cfd9-e915-4dfd-a24b-158f5d97c14c",
+				"method": "DELETE"
+			},
+			{
+				"id": "559c3838-0063-482b-b70a-c84d6dea9d4b",
+				"method": "POST"
+			},
+			{
+				"id": "d87dc8ee-cba7-4fd0-ac88-ce8a7b20fffb",
+				"method": "GET"
+			},
+			{
+				"id": "3f7138b2-2f7e-471d-aa78-614125427c9b",
+				"method": "DELETE"
+			},
+			{
+				"id": "f54302b3-b330-452e-8999-ad07f0cbcf75",
+				"method": "POST"
+			},
+			{
+				"id": "07e45eb6-9c5d-4fe7-8df0-8606005a0e87",
+				"method": "GET"
+			},
+			{
+				"id": "02428628-88b5-4cc8-8ab0-892ce0729943",
+				"method": "DELETE"
+			},
+			{
+				"id": "9708f97d-b810-45b9-a69b-ecd56603032d",
+				"method": "POST"
+			},
+			{
+				"id": "bcca406a-b2b4-4c46-8e6c-198ee9308a05",
+				"method": "GET"
+			}
+		]
+	}
+}
